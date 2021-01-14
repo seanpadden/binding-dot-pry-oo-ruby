@@ -16,6 +16,7 @@ Welcome to Quote Treasure.
 Username:
 ✨ Their first tweet
 
+
 ✨ Their second tweet
 "
 
