@@ -10,7 +10,7 @@ Welcome to Quote Treasure.
 
 ## Functionality
 
-- `User#print_all_tweets` - `puts` a list of all tweets by a User, e.g.
+- `User#print_all_tweets` (this method seems to need work) - `puts` a list of all tweets by a User, e.g.
 
 "
 Username:
@@ -20,19 +20,11 @@ Username:
 ✨ Their second tweet
 "
 
-^ this one needs work
+- `Tweet.print_all_tweets` (this method needs to be entirely written)- `puts` a list of all tweets by all Users following the above format
 
-- `Tweet.print_all_tweets` - `puts` a list of all tweets by all Users following the above format
+- `User#average_tweet_length` (this method seems to work?) - `puts` "NAME's average tweet length is NUMBER"
 
-^ to develop
-
-- `User#average_tweet_length` - `puts` "NAME's average tweet length is NUMBER"
-
-^ this one works (maybe?)
-
-- `User.longest_tweets` - returns an instance of a User who writes the longest tweets on average
-
-^ this one breaks?!?!
+- `User.longest_tweets` (this method breaks) - returns an instance of a User who writes the longest tweets on average
 
 
 -----------
