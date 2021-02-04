@@ -8,7 +8,12 @@ class User
     def initialize(username_par, bio_par)
         @username = username_par
         @bio = bio_par
+        @@all << self 
     end
+
+    def self.all 
+        @@all 
+    end 
 
     def tweets
         Tweet.all.select{|tweet| tweet.user == self}
@@ -22,7 +27,8 @@ class User
         puts username.upcase + ":\n\n"
         # the below method should be refactored to tweets.each{|tweet| puts "✨ #{tweet}"}
         tweets.each do |tweet| 
-            puts "✨ #{tweet}"
+            # binding.pry
+            puts "✨ #{tweet.content}"
         end
         "" #this is here to have a visually-pleasing return value
     end

@@ -16,6 +16,17 @@ class Tweet
         @@all
     end
 
+    ##- `Tweet.print_all_tweets` (this method needs to be entirely written)- `puts` a list of all tweets by all Users following the above format
+
+    def self.print_all_tweets
+
+        User.all.each do |user|
+            # binding.pry
+            user.print_all_tweets
+        end 
+        ""
+    end 
+
     def username
         user.username  # method lookup chain -- it's the same as the above but sometimes has gotchas        
     end
@@ -31,9 +42,9 @@ class Tweet
     end
 
     # this is a remnant of a past -- let's imagine someone was coding fast and needed some quick random data and then forgot about it
-    def to_s
-        generate_tweet
-    end
+    # def to_s
+    #     generate_tweet
+    # end
     
 end
 
